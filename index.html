@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yedukondal's Website</title>
+    <link rel="icon" href="https://m.economictimes.com/thumb/height-450,width-600,imgsize-49437,msid-64785029/lic-agencies.jpg">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      img {
+        z-index: -1;
+        height: 98vh;
+        width: 98vw;
+        position: fixed;
+      }
+      header {
+        text-align: center;
+        text-decoration: double;
+        color: darkblue;
+        font-size: xx-large;
+        background-color: yellow;
+        border: 2px solid rgba(88, 88, 203, 0.836);
+      }
+      ul.navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #051967c4;
+        overflow: hidden;
+      }
+
+      ul.navbar li {
+        float: left;
+      }
+
+      ul.navbar li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px 19px;
+        text-decoration: none;
+        font-weight: 50px;
+        font-size: x-large;
+        border: 2px solid yellow;
+      }
+
+      ul.navbar li a:hover {
+        background-color: #f2f219da;
+        border: 1px solid black;
+      }
+
+      ul.navbar li:hover ul.dropdown {
+        display: block;
+        border: 2px solid rgba(247, 233, 102, 0.877);
+        z-index: 1;
+      }
+
+      ul.navbar li ul.dropdown {
+        display: none;
+        position: absolute;
+        background-color: #124ce9f5;
+        padding: 0;
+      }
+
+      ul.navbar li ul.dropdown li {
+        display: block;
+        float: none;
+      }
+
+      ul.navbar li ul.dropdown li a {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        border: none;
+      }
+
+      ul.navbar li ul.dropdown li a:hover {
+        background-color: #003087;
+        color: white;
+      }
+      .portfolio-box {
+        width: 300px;
+        padding: 15px;
+        background-color: rgb(29,78,158);
+        border: 2px solid black;
+        border-radius: 5px;
+        margin: 20px;
+        float: left;
+        height: 400px;
+        color:yellow;
+      }
+      #profile {
+        z-index: 0;
+        width: 200px;
+        height: 210px;
+        transform: translate(45px, 5px);
+        position: absolute;
+      }
+      #details {
+        text-align: center;
+      }
+      #liclogo {
+        width: 535px;
+        height: 500px;
+        border: 4px solid rgba(235, 238, 220, 0.868);
+      }
+      #liclogo2 {
+        width: 550px;
+        height: 500px;
+        transform: translate(550px, 1px);
+        border: 3px solid blue;
+      }
+      body {
+        background-color: rgba(238, 244, 157, 0.84);
+        position: static;
+      }
+
+      .slideshow-container {
+        width: 800px;
+        height: 380px;
+        position: relative;
+        overflow: hidden;
+        transform: translate(-10px, 20px);
+        border: 2px solid black;
+        z-index: -1;
+      }
+
+      .slideshow-container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .slideshow-image {
+        display: none;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+      #quote {
+        font-size: large;
+        color: blue;
+        font-family: sans-serif;
+      }
+      #quotebox {
+        border: 2px solid rgb(30, 30, 28);
+        margin:auto;
+        text-align: center;
+        background-color: rgba(248, 248, 12, 0.822);
+        padding:8px;
+        
+      }
+
+      .footer {
+        background-color: #063a99e0;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .footer p {
+        margin: 0;
+        margin-bottom:auto;
+      }
+
+      .footer a {
+        color: #fff;
+        text-decoration: underline;
+      }
+      @keyframes animate {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .blink {
+        font-weight: 200;
+        font-size: large;
+        color: #fff;
+        width: 450px;
+        margin-left: 35%;
+        height: 25px;
+        color: #003087;
+        animation: animate 1.5s linear infinite;
+      }
+      body {
+        border: 8px solid rgba(12, 20, 247, 0.922);
+        margin: 0;
+      }
+      #demod {
+        font-size: medium;
+        text-align: center;
+      }
+     @keyframes motionText {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(750px, 0);
+            }
+        }
+
+        .moving-text {
+            position: fixed;
+            top: 20px; /* Adjust the top coordinate as needed */
+            left: 20px; /* Adjust the left coordinate as needed */
+            animation: motionText 15s linear infinite;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            text-emphasis-color: blue;
+        }
+    </style>
+  </head>
+
+  <body>
+    <div  id="body">
+    <div class="moving-text">
+      <a
+        href="https://licindia.in/Marquee-Links/Download-NEFT-Form.aspx?_ga=2.125468810.1067844177.1684503569-1482948584.1682431869"
+        >"Dear Policyholder, Please submit Bank Account Details ( NEFT ) to LIC
+        - Click here to Download NEFT Form"</a
+      >
+    </div>
+    <div>
+      <header class="blink">★WELCOME★</header>
+      &ensp;
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a>Insurance ↓</a>
+          <ul class="dropdown">
+            <li>
+              <a
+                href="https://punjabandsindbank.co.in/system/uploads/document/2150_2020111316424521363.pdf"
+                >LIC JEEVAN ANAD</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://licindia.in/getattachment/Products/Insurance-Plan/Jeevan-Labh/LIC_Jeevan-Labh_Brochure_9-inch-x-8-inch_Eng-(1).pdf.aspx"
+                >JEEVAN LABH</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.licindia.in/getattachment/Products/Insurance-Plan/n-endowment/Lic-leaflet-Endoment-Plan4-5x8-inches-wxh-new.pdf.aspx"
+                >ENDOWMENT</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://licindia.in/getattachment/Products/Insurance-Plan/LICs-Jeevan-Umang/LIC_Jeevan_Umang_Brochure_9-inch-x-8-inch_Eng(2021).pdf.aspx"
+                >JEEVAN UMANG</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://licindia.in/getattachment/Products/Insurance-Plan/LIC-s-NEW-CHILDREN-S-MONEY-BACK-PLAN-(2)/Final-Sales-Brochure-LIC-New-Childrens-Money-Back.pdf.aspx"
+                >NEW MONEY BACK</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://insurance.csccloud.in/assets/images/pdf/download/lic/LIC-Jeevan-Azad-Brochure-Eng.pdf"
+                >JEEVAN AZAD</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://punjabandsindbank.co.in/system/uploads/document/2150_2020111317094555733.pdf"
+                >JEEVAN LAKSHYA</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://punjabandsindbank.co.in/system/uploads/document/2150_2020111316570930648.pdf"
+                >JEEVAN TARUN</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#services">Services ↓</a>
+          <ul class="dropdown">
+            <li>
+              <a href="https://onlinesales.licindia.in/eSales/e2e"
+                >Ananda Login</a
+              >
+            </li>
+            <li>
+              <a href="https://merchant.licindia.in/LICMerchant/Login/begin.do"
+                >Merchant Login</a
+              >
+            </li>
+            <li>
+              <a href="https://resident.uidai.gov.in/offline-kyc"
+                >UIDAI Connect (Offline e-kyc)</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.onlineservices.nsdl.com/paam/endUserRegisterContact.html"
+                >Create Pan Card (Using TIN NSDL)
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.pan.utiitsl.com/panonline_ipg/forms/pan.html/preForm"
+                >Create Pan Card (Using UTIITSL)
+              </a>
+            </li>
+            <li>
+              <a href="https://tin.tin.nsdl.com/pantan/StatusTrack.html"
+                >Pan Card Tracking (TIN NSDL)</a
+              >
+            </li>
+            <li>
+              <a href="https://www.trackpan.utiitsl.com/PANONLINE/#forward"
+                >Pan Card Tracking (UTIITSL)</a
+              >
+            </li>
+            <li>
+              <a href="https://linkpan.licindia.in/UIDSeedingWebApp/"
+                >Link Pan card to Policy</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://ebiz.licindia.in/D2CPM/?&_ga=2.230092184.546041049.1685111757-1482948584.1682431869#qni/basicinfo"
+            >Premium Calculator</a
+          >
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li>
+          <a href="#services">Branch Locator↓</a>
+          <ul class="dropdown">
+            <li>
+              <a href="https://www.licindia.in/LOCATOR/Branch"
+                >Branch Locator(LIC)</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1Cd3O0gQEZhT8BptYtawIFQFoki8iyB2-/view?usp=share_link"
+            >Forms(Ananda)</a
+          >
+        </li>
+                <li>
+          <a href="#contact">Contact</a>
+          <ul class="dropdown">
+            <li>
+              <a href="https://wa.me/qr/QAR2FH3OEGM2P1" 
+                > What's app
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a>Forms</a>
+          <ul class="dropdown">
+            <li>
+              <a
+                href="https://docs.google.com/document/d/1l34tRo5JGGgFJgIqDCabo-vEikNOPEgiN17EHAHrS2s/edit"
+                >Form of Ananda</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div class="portfolio-box" id="portfolio-box">
+      <h2 id="details">Profile</h2>
+      <img src="https://cdn.glitch.global/fc9e1938-7160-4a7c-85fd-0b5b36325529/nanna%20pic.jpg?v=1684676788222" alt="Portfolio Image" id="profile" />
+      <br /><br /><br /><br /><br /><br /><br /><br /><b
+        ><br /><br /><br /><br />
+        <label class="demod"
+          >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;GANTA YEDUKONDALU</label
+        ><br />
+        <label class="demod"
+          >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;AGENY CODE :03301693</label
+        ><br />
+        <label class="demod"
+          >&ensp;&ensp;&ensp;&ensp;★CHIEF INSURANCE ADVISOR</label
+        >
+        <br />
+        <label class="demod"
+          >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;★CM CLUB MEMEBER</label
+        ><br />
+        <label class="demod"
+          >&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;★MDRT
+          AGENT</label
+        >
+      </b>
+    </div>
+    <div class="slideshow-container">
+      <img src="https://cdn.glitch.global/fc9e1938-7160-4a7c-85fd-0b5b36325529/BRBL4002.JPG?v=1684677109865" alt="Image 1" class="slideshow-image" />
+      <img src="https://cdn.glitch.global/fc9e1938-7160-4a7c-85fd-0b5b36325529/lic3.jpg?v=1684676737009" alt="Image 1" class="slideshow-image" />
+      <img src="https://cdn.glitch.global/fc9e1938-7160-4a7c-85fd-0b5b36325529/lic2.jpg?v=1684676711003" alt="Image 2" class="slideshow-image" />
+      <img src="https://cdn.glitch.global/fc9e1938-7160-4a7c-85fd-0b5b36325529/lic11.jpg?v=1684676780268" alt="Image 6" class="slideshow-image" />
+      <img src="https://cdn.glitch.global/fc9e1938-7160-4a7c-85fd-0b5b36325529/lic1.jpg?v=1684676650418" alt="Image 7" class="slideshow-image" />
+      <!-- Add more images here -->
+    </div>
+    <br /><br /><br /><br><br>
+    <footer class="footer">
+      <p>&copy; 2023 LIC Agent Login. All rights reserved.</p>
+      <p>
+        For more information, visit
+        <a href="https://www.licindia.in/" target="_blank">www.licindia.in</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+    </div>
+  </body>
+</html>
